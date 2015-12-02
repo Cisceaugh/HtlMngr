@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "HotelsViewController.h"
+#import "DateViewController.h"
 
 @interface ViewController ()
 
@@ -30,7 +31,7 @@
 }
 
 - (void)setupViewController {
-    [self.navigationItem setTitle:@"H & M"];
+    [self.navigationItem setTitle:@"HtlMngr"];
 }
 
 - (void)setupCustomLayout {
@@ -107,7 +108,7 @@
 }
 
 - (void)bookButtonSelected:(UIButton *)sender {
-    //
+    [self.navigationController pushViewController:[[DateViewController alloc]init] animated:YES];
 }
 
 - (void)lookupButtonSelected:(UIButton *)sender {
