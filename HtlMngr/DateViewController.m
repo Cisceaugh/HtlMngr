@@ -66,6 +66,14 @@
         return;
     }
     
+    
+    AvailabilityViewController *availabilityViewController = [[AvailabilityViewController alloc]init];
+    
+    availabilityViewController.startDate = startDate;
+    availabilityViewController.endDate = endDate;
+    
+    [self.navigationController pushViewController:availabilityViewController animated:YES];
+    
 }
 
 

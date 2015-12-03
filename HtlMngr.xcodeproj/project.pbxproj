@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		C10C36871C0E5383007C27A7 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36861C0E5383007C27A7 /* DateViewController.m */; };
 		C10C368A1C0E82C7007C27A7 /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36891C0E82C6007C27A7 /* AvailabilityViewController.m */; };
+		C10C368D1C0F9653007C27A7 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C368C1C0F9653007C27A7 /* BookViewController.m */; };
+		C10C36911C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */; };
 		C1EDC64C1C0CFCC7009D807B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64B1C0CFCC7009D807B /* main.m */; };
 		C1EDC64F1C0CFCC7009D807B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64E1C0CFCC7009D807B /* AppDelegate.m */; };
 		C1EDC6521C0CFCC7009D807B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6511C0CFCC7009D807B /* ViewController.m */; };
@@ -52,6 +54,10 @@
 		C10C36861C0E5383007C27A7 /* DateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		C10C36881C0E82C6007C27A7 /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
 		C10C36891C0E82C6007C27A7 /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		C10C368B1C0F9653007C27A7 /* BookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		C10C368C1C0F9653007C27A7 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
+		C10C368F1C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSManagedObjectContext_Category.h"; sourceTree = "<group>"; };
+		C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSManagedObjectContext_Category.m"; sourceTree = "<group>"; };
 		C1EDC6471C0CFCC7009D807B /* HtlMngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtlMngr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EDC64B1C0CFCC7009D807B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1EDC64D1C0CFCC7009D807B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,8 +135,19 @@
 				C10C36861C0E5383007C27A7 /* DateViewController.m */,
 				C10C36881C0E82C6007C27A7 /* AvailabilityViewController.h */,
 				C10C36891C0E82C6007C27A7 /* AvailabilityViewController.m */,
+				C10C368B1C0F9653007C27A7 /* BookViewController.h */,
+				C10C368C1C0F9653007C27A7 /* BookViewController.m */,
 			);
 			name = "Controller&View";
+			sourceTree = "<group>";
+		};
+		C10C368E1C0F9900007C27A7 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C10C368F1C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.h */,
+				C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 		C1EDC63E1C0CFCC7009D807B = {
@@ -156,6 +173,7 @@
 		C1EDC6491C0CFCC7009D807B /* HtlMngr */ = {
 			isa = PBXGroup;
 			children = (
+				C10C368E1C0F9900007C27A7 /* Categories */,
 				C10C36811C0E49A4007C27A7 /* Controller&View */,
 				C1EDC6981C0D1071009D807B /* Model */,
 				C1EDC64D1C0CFCC7009D807B /* AppDelegate.h */,
@@ -199,6 +217,7 @@
 			isa = PBXGroup;
 			children = (
 				C1EDC6561C0CFCC7009D807B /* HtlMngr.xcdatamodeld */,
+				C1EDC6991C0D1107009D807B /* Entities */,
 				C1EDC69E1C0D20FE009D807B /* Reservation.h */,
 				C1EDC69F1C0D20FE009D807B /* Reservation.m */,
 				C1EDC6A21C0D20FE009D807B /* Room.h */,
@@ -207,7 +226,6 @@
 				C1EDC6A71C0D20FE009D807B /* Guest.m */,
 				C1EDC6AA1C0D20FE009D807B /* Hotel.h */,
 				C1EDC6AB1C0D20FE009D807B /* Hotel.m */,
-				C1EDC6991C0D1107009D807B /* Entities */,
 			);
 			name = Model;
 			path = ..;
@@ -377,6 +395,8 @@
 				C1EDC6B91C0D2B13009D807B /* RoomsViewController.m in Sources */,
 				C1EDC6AF1C0D20FE009D807B /* Room.m in Sources */,
 				C1EDC64C1C0CFCC7009D807B /* main.m in Sources */,
+				C10C368D1C0F9653007C27A7 /* BookViewController.m in Sources */,
+				C10C36911C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

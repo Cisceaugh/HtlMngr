@@ -11,6 +11,7 @@
 #import "Reservation.h"
 #import "Room.h"
 #import "Hotel.h"
+#import "BookViewController.h"
 
 
 @interface AvailabilityViewController () <UITableViewDelegate, UITableViewDataSource>
@@ -66,6 +67,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self setUpAvailabilityViewController];
+    [self setUpTableView];
     
     
 }
@@ -113,7 +116,7 @@
     }
     
     Room *room = self.dataSource[indexPath.row];
-    cell.textLabel.text = [NSString stringWithFormat:@"Room: %i ( %i beds, $%0.2f per night)", room.number.intValue, room.beds.intValue, room.fee.floatValue];
+    cell.textLabel.text = [NSString stringWithFormat:@"Room: %i (%i beds, $%0.2f per night)", room.number.intValue, room.beds.intValue, room.fee.floatValue];
     
     return cell;
 }
@@ -123,7 +126,26 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     Room *room = self.dataSource[indexPath.row];
     
+    BookViewController *bookViewController = [[BookViewController alloc]init];
+    bookViewController.room = room;
+    bookViewController.startDate = self.startDate;
+    bookViewController.endDate = self.endDate;
     
+    [self.navigationController pushViewController:bookViewController animated:YES];
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 150.0;
+}
+
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    UIImage *headerImage = [UIImage imageNamed:@"hotel"];
+    UIImageView *imageView = [[UIImageView alloc]initWithImage:headerImage];
+    
+    imageView.frame = CGRectMake(0.0, 0.0, CGRectGetWidth(self.view.frame), 150.0);
+    imageView.contentMode = UIViewContentModeScaleAspectFill;
+    imageView.clipsToBounds = YES;
+    return imageView;
 }
 
 @end
