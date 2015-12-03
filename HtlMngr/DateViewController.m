@@ -41,9 +41,11 @@
 
 - (void)setUpDatePickers {
     self.startDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.navigationController.navigationBar.frame.size.height, CGRectGetWidth(self.view.frame), 200.0)];
+    self.startDatePicker.datePickerMode = UIDatePickerModeDate;
     [self.view addSubview:self.startDatePicker];
     
     self.endDatePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.startDatePicker.frame.size.height + 20, CGRectGetWidth(self.view.frame), 200)];
+    self.endDatePicker.datePickerMode = UIDatePickerModeDate;
     [self.view addSubview:self.endDatePicker];
 }
 
