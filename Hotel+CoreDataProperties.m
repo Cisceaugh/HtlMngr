@@ -17,5 +17,6 @@
 @dynamic name;
 @dynamic rating;
 @dynamic rooms;
+@dynamic image;
 
 @end

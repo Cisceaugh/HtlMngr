@@ -11,6 +11,8 @@
 		C10C368A1C0E82C7007C27A7 /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36891C0E82C6007C27A7 /* AvailabilityViewController.m */; };
 		C10C368D1C0F9653007C27A7 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C368C1C0F9653007C27A7 /* BookViewController.m */; };
 		C10C36911C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */; };
+		C143E5C91C110EB60024BC72 /* LookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C143E5C81C110EB60024BC72 /* LookUpViewController.m */; };
+		C15C5EE61C162DCD002D1386 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE51C162DCD002D1386 /* libFlurry_7.3.0.a */; };
 		C1EDC64C1C0CFCC7009D807B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64B1C0CFCC7009D807B /* main.m */; };
 		C1EDC64F1C0CFCC7009D807B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64E1C0CFCC7009D807B /* AppDelegate.m */; };
 		C1EDC6521C0CFCC7009D807B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6511C0CFCC7009D807B /* ViewController.m */; };
@@ -18,7 +20,6 @@
 		C1EDC65A1C0CFCC7009D807B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC6591C0CFCC7009D807B /* Assets.xcassets */; };
 		C1EDC65D1C0CFCC7009D807B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC65B1C0CFCC7009D807B /* LaunchScreen.storyboard */; };
 		C1EDC6681C0CFCC8009D807B /* HtlMngrTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6671C0CFCC8009D807B /* HtlMngrTests.m */; };
-		C1EDC6731C0CFCC8009D807B /* HtlMngrUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6721C0CFCC8009D807B /* HtlMngrUITests.m */; };
 		C1EDC69B1C0D15A6009D807B /* hotels.json in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC69A1C0D15A6009D807B /* hotels.json */; };
 		C1EDC6AC1C0D20FE009D807B /* Reservation+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC69D1C0D20FE009D807B /* Reservation+CoreDataProperties.m */; };
 		C1EDC6AD1C0D20FE009D807B /* Reservation.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC69F1C0D20FE009D807B /* Reservation.m */; };
@@ -58,6 +59,11 @@
 		C10C368C1C0F9653007C27A7 /* BookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		C10C368F1C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NSManagedObjectContext_Category.h"; sourceTree = "<group>"; };
 		C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NSManagedObjectContext_Category.m"; sourceTree = "<group>"; };
+		C143E5C71C110EB60024BC72 /* LookUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LookUpViewController.h; sourceTree = "<group>"; };
+		C143E5C81C110EB60024BC72 /* LookUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LookUpViewController.m; sourceTree = "<group>"; };
+		C15C5EE31C162DCD002D1386 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		C15C5EE41C162DCD002D1386 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
+		C15C5EE51C162DCD002D1386 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
 		C1EDC6471C0CFCC7009D807B /* HtlMngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtlMngr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EDC64B1C0CFCC7009D807B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1EDC64D1C0CFCC7009D807B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,8 +78,6 @@
 		C1EDC6671C0CFCC8009D807B /* HtlMngrTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HtlMngrTests.m; sourceTree = "<group>"; };
 		C1EDC6691C0CFCC8009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EDC66E1C0CFCC8009D807B /* HtlMngrUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HtlMngrUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1EDC6721C0CFCC8009D807B /* HtlMngrUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HtlMngrUITests.m; sourceTree = "<group>"; };
-		C1EDC6741C0CFCC8009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1EDC69A1C0D15A6009D807B /* hotels.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hotels.json; sourceTree = "<group>"; };
 		C1EDC69C1C0D20FE009D807B /* Reservation+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reservation+CoreDataProperties.h"; sourceTree = "<group>"; };
 		C1EDC69D1C0D20FE009D807B /* Reservation+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reservation+CoreDataProperties.m"; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15C5EE61C162DCD002D1386 /* libFlurry_7.3.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,18 +130,20 @@
 		C10C36811C0E49A4007C27A7 /* Controller&View */ = {
 			isa = PBXGroup;
 			children = (
-				C1EDC6501C0CFCC7009D807B /* ViewController.h */,
-				C1EDC6511C0CFCC7009D807B /* ViewController.m */,
-				C1EDC6B41C0D2AD6009D807B /* HotelsViewController.h */,
-				C1EDC6B51C0D2AD6009D807B /* HotelsViewController.m */,
-				C1EDC6B71C0D2B13009D807B /* RoomsViewController.h */,
-				C1EDC6B81C0D2B13009D807B /* RoomsViewController.m */,
-				C10C36851C0E5383007C27A7 /* DateViewController.h */,
-				C10C36861C0E5383007C27A7 /* DateViewController.m */,
 				C10C36881C0E82C6007C27A7 /* AvailabilityViewController.h */,
 				C10C36891C0E82C6007C27A7 /* AvailabilityViewController.m */,
 				C10C368B1C0F9653007C27A7 /* BookViewController.h */,
 				C10C368C1C0F9653007C27A7 /* BookViewController.m */,
+				C10C36851C0E5383007C27A7 /* DateViewController.h */,
+				C10C36861C0E5383007C27A7 /* DateViewController.m */,
+				C1EDC6B41C0D2AD6009D807B /* HotelsViewController.h */,
+				C1EDC6B51C0D2AD6009D807B /* HotelsViewController.m */,
+				C143E5C71C110EB60024BC72 /* LookUpViewController.h */,
+				C143E5C81C110EB60024BC72 /* LookUpViewController.m */,
+				C1EDC6B71C0D2B13009D807B /* RoomsViewController.h */,
+				C1EDC6B81C0D2B13009D807B /* RoomsViewController.m */,
+				C1EDC6501C0CFCC7009D807B /* ViewController.h */,
+				C1EDC6511C0CFCC7009D807B /* ViewController.m */,
 			);
 			name = "Controller&View";
 			sourceTree = "<group>";
@@ -150,12 +157,22 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
+		C15C5EE21C162DCD002D1386 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				C15C5EE31C162DCD002D1386 /* Flurry.h */,
+				C15C5EE41C162DCD002D1386 /* FlurryWatch.h */,
+				C15C5EE51C162DCD002D1386 /* libFlurry_7.3.0.a */,
+			);
+			path = Flurry;
+			sourceTree = "<group>";
+		};
 		C1EDC63E1C0CFCC7009D807B = {
 			isa = PBXGroup;
 			children = (
+				C15C5EE21C162DCD002D1386 /* Flurry */,
 				C1EDC6491C0CFCC7009D807B /* HtlMngr */,
 				C1EDC6661C0CFCC8009D807B /* HtlMngrTests */,
-				C1EDC6711C0CFCC8009D807B /* HtlMngrUITests */,
 				C1EDC6481C0CFCC7009D807B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -202,15 +219,6 @@
 				C1EDC6691C0CFCC8009D807B /* Info.plist */,
 			);
 			path = HtlMngrTests;
-			sourceTree = "<group>";
-		};
-		C1EDC6711C0CFCC8009D807B /* HtlMngrUITests */ = {
-			isa = PBXGroup;
-			children = (
-				C1EDC6721C0CFCC8009D807B /* HtlMngrUITests.m */,
-				C1EDC6741C0CFCC8009D807B /* Info.plist */,
-			);
-			path = HtlMngrUITests;
 			sourceTree = "<group>";
 		};
 		C1EDC6981C0D1071009D807B /* Model */ = {
@@ -394,6 +402,7 @@
 				C1EDC6AC1C0D20FE009D807B /* Reservation+CoreDataProperties.m in Sources */,
 				C1EDC6B91C0D2B13009D807B /* RoomsViewController.m in Sources */,
 				C1EDC6AF1C0D20FE009D807B /* Room.m in Sources */,
+				C143E5C91C110EB60024BC72 /* LookUpViewController.m in Sources */,
 				C1EDC64C1C0CFCC7009D807B /* main.m in Sources */,
 				C10C368D1C0F9653007C27A7 /* BookViewController.m in Sources */,
 				C10C36911C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m in Sources */,
@@ -412,7 +421,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1EDC6731C0CFCC8009D807B /* HtlMngrUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,6 +539,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HtlMngr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.HtlMngr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -542,6 +554,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HtlMngr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.HtlMngr;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
