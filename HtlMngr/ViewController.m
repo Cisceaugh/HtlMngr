@@ -130,8 +130,6 @@
 - (void)lookupButtonSelected:(UIButton *)sender {
     [self.navigationController pushViewController:[[LookUpViewController alloc]init] animated:YES];
     [Flurry logEvent:@"User pressed lookup button"];
-    
-
 }
 
 

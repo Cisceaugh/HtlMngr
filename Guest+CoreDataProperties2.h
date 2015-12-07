@@ -1,8 +1,8 @@
 //
-//  Guest+CoreDataProperties.h
+//  Guest+CoreDataProperties2.h
 //  HtlMngr
 //
-//  Created by Francisco Ragland Jr on 11/30/15.
+//  Created by Francisco Ragland Jr on 12/7/15.
 //  Copyright © 2015 Francisco Ragland. All rights reserved.
 //
 //  Choose "Create NSManagedObject Subclass…" from the Core Data editor menu
@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Guest (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSString *name;
+@property (nullable, nonatomic, retain) NSString *lastname;
 @property (nullable, nonatomic, retain) Reservation *reservation;
 
 @end

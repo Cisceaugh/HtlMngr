@@ -16,7 +16,7 @@
     
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate];
     
-    
+
     Guest *guest = [NSEntityDescription insertNewObjectForEntityForName:@"Guest" inManagedObjectContext:delegate.managedObjectContext];
     
     guest.name = name;
