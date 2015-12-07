@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
+#import "Flurry.h"
+
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

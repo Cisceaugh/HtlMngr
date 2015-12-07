@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
-
 #import "Hotel.h"
 #import "Room.h"
 #import "Reservation.h"
@@ -21,13 +20,16 @@
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate 
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [self setUpRootViewController];
     [self bootsStrapApp];
     [self setUpNotifications];
+    [Flurry startSession:@"C8RSBYKV6YQQHT3BCX3P"];
+    [Flurry setDebugLogEnabled:YES];
+    
     
     
     return YES;

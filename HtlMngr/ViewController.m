@@ -11,6 +11,7 @@
 #import "DateViewController.h"
 #import "LookUpViewController.h"
 #import "AppDelegate.h"
+#import "Flurry.h"
 
 @interface ViewController ()
 
@@ -21,6 +22,7 @@
 - (void)loadView {
     [super loadView];
     [self setupCustomLayout];
+
 }
 
 - (void)viewDidLoad {
@@ -127,6 +129,11 @@
 
 - (void)lookupButtonSelected:(UIButton *)sender {
     [self.navigationController pushViewController:[[LookUpViewController alloc]init] animated:YES];
+    [Flurry logEvent:@"User pressed lookup button"];
+    
+
 }
+
+
 
 @end

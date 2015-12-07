@@ -13,6 +13,8 @@
 		C10C36911C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m in Sources */ = {isa = PBXBuildFile; fileRef = C10C36901C0F9C8B007C27A7 /* NSObject+NSManagedObjectContext_Category.m */; };
 		C143E5C91C110EB60024BC72 /* LookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C143E5C81C110EB60024BC72 /* LookUpViewController.m */; };
 		C15C5EE61C162DCD002D1386 /* libFlurry_7.3.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE51C162DCD002D1386 /* libFlurry_7.3.0.a */; };
+		C15C5EE81C163519002D1386 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE71C163519002D1386 /* Security.framework */; };
+		C15C5EEA1C16353B002D1386 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE91C16353B002D1386 /* SystemConfiguration.framework */; };
 		C1EDC64C1C0CFCC7009D807B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64B1C0CFCC7009D807B /* main.m */; };
 		C1EDC64F1C0CFCC7009D807B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64E1C0CFCC7009D807B /* AppDelegate.m */; };
 		C1EDC6521C0CFCC7009D807B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6511C0CFCC7009D807B /* ViewController.m */; };
@@ -64,6 +66,8 @@
 		C15C5EE31C162DCD002D1386 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		C15C5EE41C162DCD002D1386 /* FlurryWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryWatch.h; sourceTree = "<group>"; };
 		C15C5EE51C162DCD002D1386 /* libFlurry_7.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_7.3.0.a; sourceTree = "<group>"; };
+		C15C5EE71C163519002D1386 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C15C5EE91C16353B002D1386 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		C1EDC6471C0CFCC7009D807B /* HtlMngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtlMngr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EDC64B1C0CFCC7009D807B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1EDC64D1C0CFCC7009D807B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15C5EEA1C16353B002D1386 /* SystemConfiguration.framework in Frameworks */,
+				C15C5EE81C163519002D1386 /* Security.framework in Frameworks */,
 				C15C5EE61C162DCD002D1386 /* libFlurry_7.3.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +176,8 @@
 		C1EDC63E1C0CFCC7009D807B = {
 			isa = PBXGroup;
 			children = (
+				C15C5EE91C16353B002D1386 /* SystemConfiguration.framework */,
+				C15C5EE71C163519002D1386 /* Security.framework */,
 				C15C5EE21C162DCD002D1386 /* Flurry */,
 				C1EDC6491C0CFCC7009D807B /* HtlMngr */,
 				C1EDC6661C0CFCC8009D807B /* HtlMngrTests */,
