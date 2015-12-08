@@ -16,6 +16,8 @@
 		C15C5EE81C163519002D1386 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE71C163519002D1386 /* Security.framework */; };
 		C15C5EEA1C16353B002D1386 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C15C5EE91C16353B002D1386 /* SystemConfiguration.framework */; };
 		C15C5EEE1C164FEA002D1386 /* Guest+CoreDataProperties2.m in Sources */ = {isa = PBXBuildFile; fileRef = C15C5EED1C164FEA002D1386 /* Guest+CoreDataProperties2.m */; };
+		C15C5EF01C1663B2002D1386 /* Hotels.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C15C5EEF1C1663B2002D1386 /* Hotels.jpg */; };
+		C15C5EF21C1663C1002D1386 /* TheGrandBudapestHotelStill.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C15C5EF11C1663C1002D1386 /* TheGrandBudapestHotelStill.jpg */; };
 		C1EDC64C1C0CFCC7009D807B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64B1C0CFCC7009D807B /* main.m */; };
 		C1EDC64F1C0CFCC7009D807B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC64E1C0CFCC7009D807B /* AppDelegate.m */; };
 		C1EDC6521C0CFCC7009D807B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC6511C0CFCC7009D807B /* ViewController.m */; };
@@ -71,6 +73,8 @@
 		C15C5EEB1C164F4B002D1386 /* HtlMngr 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "HtlMngr 2.xcdatamodel"; sourceTree = "<group>"; };
 		C15C5EEC1C164FEA002D1386 /* Guest+CoreDataProperties2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Guest+CoreDataProperties2.h"; sourceTree = "<group>"; };
 		C15C5EED1C164FEA002D1386 /* Guest+CoreDataProperties2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Guest+CoreDataProperties2.m"; sourceTree = "<group>"; };
+		C15C5EEF1C1663B2002D1386 /* Hotels.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Hotels.jpg; path = ../../../../Downloads/Hotels.jpg; sourceTree = "<group>"; };
+		C15C5EF11C1663C1002D1386 /* TheGrandBudapestHotelStill.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = TheGrandBudapestHotelStill.jpg; path = ../../../../Downloads/TheGrandBudapestHotelStill.jpg; sourceTree = "<group>"; };
 		C1EDC6471C0CFCC7009D807B /* HtlMngr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HtlMngr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EDC64B1C0CFCC7009D807B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C1EDC64D1C0CFCC7009D807B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 		C1EDC64A1C0CFCC7009D807B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C15C5EEF1C1663B2002D1386 /* Hotels.jpg */,
+				C15C5EF11C1663C1002D1386 /* TheGrandBudapestHotelStill.jpg */,
 				C1EDC64B1C0CFCC7009D807B /* main.m */,
 				C1EDC69A1C0D15A6009D807B /* hotels.json */,
 			);
@@ -369,7 +375,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C15C5EF01C1663B2002D1386 /* Hotels.jpg in Resources */,
 				C1EDC69B1C0D15A6009D807B /* hotels.json in Resources */,
+				C15C5EF21C1663C1002D1386 /* TheGrandBudapestHotelStill.jpg in Resources */,
 				C1EDC65D1C0CFCC7009D807B /* LaunchScreen.storyboard in Resources */,
 				C1EDC65A1C0CFCC7009D807B /* Assets.xcassets in Resources */,
 			);

@@ -60,8 +60,9 @@
 
 - (void)setUpNameField {
     self.nameField = [[UITextField alloc]init];
-    self.nameField.placeholder = @"input name";
+    self.nameField.placeholder = @"input name and last name with one space in between";
     self.nameField.translatesAutoresizingMaskIntoConstraints = NO;
+    self.nameField.adjustsFontSizeToFitWidth = YES;
     
     [self.view addSubview:self.nameField];
     
